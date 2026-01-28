@@ -1,0 +1,31 @@
+<%-layout("layouts/boilerplate.ejs")%>
+<br>
+<h1 >User Management System</h1>
+<br>
+<h4>Add New User </h4>
+<div class="row">
+    <div class="col-6">
+        <form  method="POST" action="/user">
+        <div class="mb-3">
+            <label for="id"  class="form-label">ID</label>
+            <input type="text" name="id" class="form-control" placeholder="enter id" id="id">
+
+        </div>
+        <div class="mb-3">
+             <label for="username"  class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" placeholder="enter username" id="username">
+        </div>
+        <div class="mb-3">
+             <label for="email"  class="form-label">Email</label>
+            <input type="text"  name="email" class="form-control" placeholder="enter email address" id="email">
+        </div>
+        <div class="mb-3">
+             <label for="password"  class="form-label">Password</label>
+            <input type="text" name="password"class="form-control" placeholder="enter strong password" id="password">
+            
+        </div>
+        <button class="btn btn-dark register-btn">Register</button>
+        </form>
+
+    </div>
+</div>

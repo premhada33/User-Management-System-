@@ -1,0 +1,53 @@
+body 
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(160, 158, 155) !important;
+    color:purple;
+}
+/* index page */
+table , tr , th ,td
+{
+    border:1px solid black !important;
+}
+.edit-btn
+{
+    border: none !important;
+    background-color: rgb(73, 73, 70) !important;
+}
+.delete-btn
+{
+    border: none !important;;
+    background-color: rgb(231, 75, 75) !important;
+}
+
+.show-total-user
+
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #212529 !important;
+    height:2.3rem !important;
+    width:10rem !important;
+    color :white !important  ; 
+    padding:.5rem .9rem !important ;
+    border-radius: .5rem;
+}
+
+.register-btn
+{
+    border: none !important;;
+    background-color: rgb(231, 75, 75) !important;
+}
+.btn-editpage
+{
+  
+    border: none !important;;
+    background-color: rgb(231, 75, 75) !important;  
+}
+.btn-deletepage
+{
+  
+    border: none !important;;
+    background-color: rgb(231, 75, 75) !important;  
+}

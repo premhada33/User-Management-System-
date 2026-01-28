@@ -1,0 +1,24 @@
+<%-layout("layouts/boilerplate.ejs")%>
+    <br>
+    <h1>User Management System</h1>
+    <h4> username : <%=userData.username%>
+    </h4>
+    <p>Warning! : you need to enter right password and email</p>
+    <div class="row">
+        <div class="col-6">
+            <form method="POST" action="/user/<%=userData.id%>?_method=DELETE">
+
+                <div class="mb-3">
+
+                    <!-- <label for="username"  class="form-label">Username</label> -->
+                    <input type="text" name="email" class="form-control" placeholder="enter email ">
+                        
+                    <br>
+                    <input type="text" name="password" class="form-control" placeholder="enter password"
+                        >
+
+                </div>
+                <button class="btn btn-dark btn-deletepage">Delete user </button>
+            </form>
+        </div>
+    </div>

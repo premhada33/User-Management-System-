@@ -1,0 +1,50 @@
+<%-layout("layouts/boilerplate.ejs")%>
+
+    <br>
+    <h3 style="text-align: center;">User Managment System</h3>
+
+    <div class="row">
+        <form  method="GET" action="/user/new" class="col-2 offset-1">
+            <button class="btn btn-dark">Add new user </button>
+        </form>
+        <div class="show-total-user ">Total User = <%=userData.length%>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="row">
+        <div class="col-14">
+            <table class="offset-1">
+                <tr>
+                    <th style="text-align: center;">Id</th>
+                    <th style="text-align: center;">Email</th>
+                    <th style="text-align: center;">Username</th>
+                    <th colspan="2" style="text-align: center;">buttons</th>
+                </tr>
+                <% for (let user of userData) {%>
+                    <tr>
+                        <td style="text-align: center;">
+                            <%=user.id%>
+                        </td>
+                        <td style="text-align: center;">
+                            <%=user.email%>
+                        </td>
+                        <td style="text-align: center;">
+                            <%=user.username%>
+                        </td>
+                        <td>
+                            <form method="GET"action="/user/<%=user.id%>/edit">
+                                <button class="btn btn-dark edit-btn">Edit username</button></form>
+                        </td>
+                        <td>
+                            <form method="get" action="/user/<%=user.id%>/delete">
+                                <button class="btn btn-dark delete-btn">Delete</button></form>
+                        </td>
+
+                    </tr>
+                    <%}%>
+            </table>
+        </div>
+    </div>
+    <br><br>
